@@ -1,12 +1,10 @@
-import React from "react";
-
-function TabsItem({ label, Icon, active, setActive }) {
+const TabsItem = ({ label, Icon, active, setActive }) => {
   return (
-    <li className="mr-2">
+    <li className="md:mx-4">
       <a
         href="#"
         onClick={setActive}
-        className={`flex flex-col content-center p-4 rounded-t-lg border-b-2 border-transparent ${
+        className={`flex flex-col content-center p-4 rounded-t-lg border-b-4 border-transparent ${
           active
             ? "text-blue-400 border-blue-400"
             : "hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
@@ -17,6 +15,6 @@ function TabsItem({ label, Icon, active, setActive }) {
       </a>
     </li>
   );
-}
+};
 
 export default TabsItem;
